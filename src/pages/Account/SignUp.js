@@ -25,7 +25,7 @@ function SignupForm() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5000/api/signup', formData);
+      const response = await axios.post('https://thecandid.onrender.com/api/signup', formData);
 
       if (response.status === 201) {
         // Handle successful sign-up
